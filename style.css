@@ -34,13 +34,16 @@ main picture > img{
 footer{
     text-align: center;
     margin: 40px;
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
 footer > a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: normal;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+    font-weight: bold;
 }
 
 footer > a:hover{

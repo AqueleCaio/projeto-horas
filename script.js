@@ -13,20 +13,21 @@ if (hours > 11 && hours < 17){
     img.setAttribute('src', 'imagens/railway-gea24f6fdf_1280.jpg');
 } 
 
-// Estilo da página para quando estiver de noite, entre 17:00 e 5:00
+// Estilo da página para quando estiver de noite, entre 16:00 e 0:00
 else if (hours > 16){
     document.body.style.backgroundColor = '#0B0125';
     info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Noite`;
     img.setAttribute('src', 'imagens/sky-g7c9547511_1280.jpg');
 } 
 
+// Estilo da página para quando estiver de noite, entre 0:00 e 5:00
 else if (hours > -1 && hours < 5){
     document.body.style.backgroundColor = '#0B0125';
     info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Madrugada`;
     img.setAttribute('src', 'imagens/sky-g7c9547511_1280.jpg');
 } 
 
-// Estilo da página para quando estiver de manha, entre 5:00 e 12:00
+// Estilo da página para quando estiver de manha, entre 4:00 e 12:00
 else if (hours > 4 && hours < 12){
     document.body.style.backgroundColor = '#FCFF24';
     info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Manha`;
