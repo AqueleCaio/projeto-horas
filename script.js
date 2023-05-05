@@ -5,9 +5,6 @@ let date = new Date();
 let hours = date.getHours();
 let minutes = date.getMinutes();
 
-console.log(minutes);
-console.log(hours);
-
 // Estilo da página para quando estiver de tarde, entre 12:00 e 17:00
 if (hours > 12 && hours < 17){
     document.body.style.backgroundColor = '#5BFFDF';
