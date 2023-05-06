@@ -5,11 +5,19 @@ let date = new Date();
 let hours = date.getHours();
 let minutes = date.getMinutes();
 
+const interval = 1 * 60 * 1000;
+
 // Função para concatenar um 0 na frente dos minutos,
 // caso tenha mais de duas caracteres a função corta (slice) os dois primeiros da esquerda
 function zero(minute){
     return('0' + minute).slice(-2)
-}
+};
+
+function reloadPage(){
+    location.reload()
+};
+
+setInterval(reloadPage, interval)
 
 // Estilo da página para quando estiver de tarde, entre 12:00 e 17:00
 if (hours > 11 && hours < 17){
