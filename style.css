@@ -28,7 +28,7 @@ main picture > img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    box-shadow: inset 6px 6px 13px 0px black
+    box-shadow: inset 6px 6px 13px 0px black;
 }
 
 footer{

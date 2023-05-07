@@ -27,6 +27,13 @@ if (hours > 11 && hours < 17){
 
 } 
 
+// Estilo da página para quando estiver no final da tarde, entre 16:00 e 18:00
+if (hours > 15 && hours < 18){
+    document.body.style.backgroundColor = '#FA9324';
+    image.setAttribute('src', 'imagens/tree-gf48efb9fd_1280.jpg');
+    info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Tarde`;
+} 
+
 // Estilo da página para quando estiver de noite, entre 16:00 e 0:00
 else if (hours > 16){
     document.body.style.backgroundColor = '#0B0125';
