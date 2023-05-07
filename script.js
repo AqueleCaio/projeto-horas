@@ -5,7 +5,7 @@ let date = new Date();
 let hours = date.getHours();
 let minutes = date.getMinutes();
 
-const interval = 1 * 60 * 1000;
+const interval = 60 * 1000;
 
 // Função para concatenar um 0 na frente dos minutos,
 // caso tenha mais de duas caracteres a função corta (slice) os dois primeiros da esquerda
