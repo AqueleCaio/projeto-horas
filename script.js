@@ -1,5 +1,5 @@
-let info_hours = document.getElementById('info_hours');
 let image = document.getElementById('referent_image');
+let info_hours = document.getElementById('info_hours');
 
 let date = new Date();
 let hours = date.getHours();
@@ -24,14 +24,13 @@ if (hours > 11 && hours < 17){
     document.body.style.backgroundColor = 'rgb(43 146 249)';
     image.setAttribute('src', 'imagens/railway-gea24f6fdf_1280.jpg');
     info_hours.innerText = `Agora são exatamente ${hours}:${zero(minutes)} da Tarde`;
-
 } 
 
 // Estilo da página para quando estiver no final da tarde, entre 16:00 e 18:00
-if (hours > 15 && hours < 18){
+else if (hours > 15 && hours < 18){
     document.body.style.backgroundColor = '#FA9324';
     image.setAttribute('src', 'imagens/tree-gf48efb9fd_1280.jpg');
-    info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Tarde`;
+    info_hours.innerText = `Agora são exatamente ${hours}:${zero(minutes)} da Tarde`;
 } 
 
 // Estilo da página para quando estiver de noite, entre 16:00 e 0:00
