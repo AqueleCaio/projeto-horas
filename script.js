@@ -53,37 +53,3 @@ else if (hours > 4 && hours < 12){
     image.setAttribute('src', 'imagens/trees-gc0a5a8c23_1280.jpg');
     info_hours.innerText = `Agora são exatamente ${hours}:${zero(minutes)} da Manha`;
 }
-
-
-/*
---- Tentativa de usar o switch/case ----
-
-switch(hours){
-    
-    // Estilo da página para quando for de manha, entre 5:00 e 12:00
-    case hours > 4 && hours < 12:
-        document.body.style.backgroundColor = '#FCFF24';
-        info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Porra`;
-        image.setAttribute('src', 'imagens/trees-gc0a5a8c23_1280.jpg');
-    break;
-
-    case hours > 11 && hours < 17: 
-        document.body.style.backgroundColor = '#5BFFDF';
-        info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Tarde`;
-        image.setAttribute('src', 'imagens/railway-gea24f6fdf_1280.jpg');
-    break;
-
-    case hours > 16:
-        document.body.style.backgroundColor = '#0B0125';
-        info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Noite`;
-        image.setAttribute('src', 'imagens/sky-g7c9547511_1280.jpg');
-    break;
-
-    case hours > -1 && hours < 5:
-        document.body.style.backgroundColor = '#0B0125';
-        info_hours.innerText = `Agora são exatamente ${hours}:${minutes} da Madrugada`;
-        image.setAttribute('src', 'imagens/sky-g7c9547511_1280.jpg');
-    break;
-}
-*/
-
