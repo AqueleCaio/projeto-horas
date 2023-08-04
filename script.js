@@ -17,6 +17,8 @@ function reloadPage(){
 
 setInterval(reloadPage, 60000)
 
+// Série de if else para mudar o estilo da página:
+
 // Estilo da página para quando estiver de tarde, entre 12:00 e 17:00
 if (hours > 11 && hours < 17){
     document.body.style.backgroundColor = 'rgb(43 146 249)';
